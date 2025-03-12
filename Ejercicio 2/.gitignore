@@ -1,9 +1,17 @@
+# Text files
 *.txt
+
+# Executables with no extension (Linux/macOS)
+*
+!*/
+!*.*
+
 # Executables
 *.exe
 *.out
 *.app
 *.o
+
 # Executables with no extension (Linux/macOS)
 *
 !*/
