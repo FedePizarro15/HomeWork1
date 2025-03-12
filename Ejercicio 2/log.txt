@@ -1,0 +1,10 @@
+[DEBUG] Error
+[INFO] Error
+[WARNING] Error
+[ERROR] Error
+[CRITICAL] Error
+[DEBUG] Error
+[INFO] Error
+[WARNING] Error
+[ERROR] Error
+[CRITICAL] Error
