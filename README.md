@@ -6,4 +6,20 @@
 
 ---
 
-## Pasos para compilar y ejecutar los programas
+## Pasos para compilar los programas
+
+### Ejercicio 1:
+
+g++ main.cpp -Wall -o Ej1
+
+### Ejercicio 2:
+
+g++ main.cpp -Wall -o Ej2
+
+### Ejercicio 3:
+
+g++ main.cpp -Wall -o Ej3
+
+### Ejercicio 4:
+
+g++ main.cpp -Wall -o Ej4
