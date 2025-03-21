@@ -65,21 +65,21 @@ void insert(list& list, shared_ptr<node> insertionNode, size_t pos) {
         list.tail = insertionNode;
         list.size++;
         return;
-    }
+    };
 
     if (pos == 0) {
         insertionNode->next = list.head;
         list.head = insertionNode;
         list.size++;
         return;
-    }
+    };
 
     if (pos == list.size) {
         list.tail->next = insertionNode;
         list.tail = insertionNode;
         list.size++;
         return;
-    }
+    };
 
     shared_ptr<node> iterNode = list.head;
 
@@ -110,7 +110,7 @@ void erase(list& list, size_t pos) {
         list.tail = nullptr;
         list.size--;
         return;
-    }
+    };
 
     if (pos == 0) {
         auxNode = list.head;
@@ -119,7 +119,7 @@ void erase(list& list, size_t pos) {
         auxNode->next = nullptr;
         list.size--;
         return;
-    }
+    };
 
     if (pos == list.size - 1) {
         iterNode = list.head;
@@ -132,7 +132,7 @@ void erase(list& list, size_t pos) {
         list.tail = iterNode;
         list.size--;
         return;
-    }
+    };
 
     iterNode = list.head;
 
@@ -153,7 +153,7 @@ void print_list(list& list) {
     if (list.size == 0) {
         cout << "Lista vacía." << endl;
         return;
-    }
+    };
     
     cout << "Lista:" << endl;
 
@@ -230,6 +230,6 @@ int main() {
             
             default:
                 cout << "Opción incorrecta, intente nuevamente." << endl;
-        }
-    }
-}
+        };
+    };
+};

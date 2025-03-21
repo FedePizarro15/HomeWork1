@@ -26,10 +26,10 @@ string addLabel(string message, ERROR_TYPE errorType) {
                 break;
             default:
                 break;
-            }
+            };
 
     return message;
-}
+};
 
 void logMessage(string message, ERROR_TYPE errorType) {
     ofstream outFile("log.txt", ios::app);
@@ -40,9 +40,10 @@ void logMessage(string message, ERROR_TYPE errorType) {
             outFile << message << endl;
 
             outFile.close();
-        } else
+        } else {
             cerr << "Error abriendo el archivo!\n";
-}
+        };
+};
 
 void logMessage(string errorMessage, string file, int errorLine) {
     ofstream outFile("log.txt", ios::app);
@@ -51,9 +52,10 @@ void logMessage(string errorMessage, string file, int errorLine) {
             outFile << "[ERROR] " << file << ":" << errorLine << " " << errorMessage << endl;
 
             outFile.close();
-        } else
+        } else {
             cerr << "Error abriendo el archivo!\n";
-}
+        };
+};
 
 void logMessage(string accesMessage, string userName) {
     ofstream outFile("log.txt", ios::app);
@@ -62,14 +64,15 @@ void logMessage(string accesMessage, string userName) {
             outFile << "[SECURITY] " << userName << " - " << accesMessage << endl;
 
             outFile.close();
-        } else
+        } else {
             cerr << "Error abriendo el archivo!\n";
-}
+        };
+};
 
 int main() {
     for (int i = 0; i < 5; i++) {
         logMessage("Error", ERROR_TYPE(i));
-    }
+    };
 
     logMessage("Mensaje de error", "main.cpp", 10);
 
@@ -84,7 +87,7 @@ int main() {
         logMessage("ERROR", "main.cpp", __LINE__);
         cerr << error.what() << '\n';
         return 1;
-    }
+    };
 
     return 0;
 }
